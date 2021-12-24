@@ -1,0 +1,25 @@
+@mixin display_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  text-align: center;
+  @include display_flex();
+  flex-direction: column;
+  min-height: 70vh;
+}
+
+.weather {
+  margin-top: 50px;
+  p {
+    span {
+      color: red;
+      font-style: bold;
+      margin: 5px 8px;
+      padding: 5px;
+      border: 1px solid rgba(250, 1, 1, 0.424);
+    }
+  }
+}
